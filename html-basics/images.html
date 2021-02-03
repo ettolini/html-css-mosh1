@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+      }
+      /* The Cover Value makes sure the element fills its whole square (every element is located inside their own "square").
+      This means, the image may be cropped so it fits the set pixels, but without losing its original "image proportions".
+      There are many other object-fit values you can check out!
+      For example, the Contain Value fits the entire image within the square, so it doesn't crop it, but it also maintains its "proportions"*/
+    </style>
+  </head>
+  <body>
+    <img
+      src="/web-dev-fundamentals/images/burger.jpg"
+      alt="A delicious burger"
+    />
+    <!-- The alternative text (alt) is read to those without sight, so it's helpful for them to add it.
+    It also helps search engines, they read it and understand what we're providing with our image.
+    And, if the image can't be loaded, the text will be shown. -->
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      td,
+      th {
+        border: 1px solid grey;
+        border-collapse: collapse;
+        /* Gets rid of the neighbooring cells' borders */
+        padding: 5px;
+      }
+
+      tfoot {
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Tables are used to represent tabular data (data that is structured into rows) -->
+    <table>
+      <!-- Table Row Element (can both contain header cells, to describe the column's data, and data cells, that hold said data) -->
+      <thead>
+        <tr>
+          <th colspan="2">Expenses</th>
+          <!-- Colspan determines how many cells this column should expand to (1 is its default value) -->
+        </tr>
+        <tr>
+          <th>Category</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Marketing</td>
+          <td>$100</td>
+        </tr>
+        <tr>
+          <td>Accounting</td>
+          <td>$200</td>
+        </tr>
+      </tbody>
+      <!-- thead and tbody are used to make easier to identify the table's head and body -->
+      <tfoot>
+        <tr>
+          <th>Total</th>
+          <th>$300</th>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

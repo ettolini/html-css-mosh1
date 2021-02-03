@@ -1,0 +1,5 @@
+main -> Represents main content of the page. Can only have one.
+section -> Groups related content.
+header -> Represents introductory content.
+footer -> Can be used in the same way as header.
+aside -> Represents content that's not directly related to the main content (like adds).
