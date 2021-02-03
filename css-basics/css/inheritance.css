@@ -1,0 +1,13 @@
+/* color -> Paragraph and its children will be dodgerblue (strong is his child, in this case) */
+/* border -> Borders are not inherited by default, it'll only be applied to the father */
+p {
+  color: dodgerblue;
+  border: 1px solid black;
+}
+
+/* color -> Initial sets the color value to the default one (without inheritance) */
+/* border -> Inherit forces the inheritance to happen when it doesn't by default */
+strong {
+  color: initial;
+  border: inherit;
+}

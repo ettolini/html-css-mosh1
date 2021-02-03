@@ -1,0 +1,26 @@
+/* Selecting by its type */
+body {
+  margin: 10px;
+}
+
+/* Selecting by its id */
+#products {
+}
+
+/* Selecting by its class */
+.product {
+}
+
+/* Selecting by its attribute (not common)
+
+Checks for anchers that have a target attribute... 
+a[target] {
+}
+
+Checks for anchers that have a target attribute with a "_blank" value...
+a[target="_blank"] {
+}
+
+Checks for anchers that have a href attribute that links to "https://google.com"... 
+a[href="https://google.com"] {
+} */

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="providing-css.css" />
+    <!-- rel (Relationship) determines the type of resource you're linking this document to (in this case, a stylesheet) -->
+    <!-- The rules in HTML (embedded stylesheets) override the rules from href (external stylesheets) -->
+    <style>
+      p {
+        color: black;
+      }
+
+      #second {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Inline styles override every other rule (not recommended) -->
+    <p style="color: blue; font-weight: bold">Lorem ipsum dolor sit amet.</p>
+    <!-- If you want to apply styles to an specific element, you should rather use an id -->
+    <p id="second">Lorem ipsum dolor sit amet.</p>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+/* Box Shadow */
+.box {
+  width: 200px;
+  height: 200px;
+  background: royalblue;
+  box-shadow: 10px 10px 30px grey;
+  /* You can define from where the shadow will come out, first the horizontal position (positive goes right, negative goes left),
+  then the vertical position (positive goes down, negative goes up); if the values are set to 0, the shadow will surround the whole square.
+  Then you can define pixels to determine the shadow's softness. And then you can determine its color (black by default). */
+}
+
+/* Text Shadow */
+h1 {
+  color: white;
+  text-shadow: 0 0 5px rbga(0, 0, 0, 0.2);
+  /* It works the same as the box shadow */
+}

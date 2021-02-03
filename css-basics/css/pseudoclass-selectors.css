@@ -1,0 +1,44 @@
+/* Applies to the articles' first child */
+article :first-child {
+  font-size: 140%;
+  font-style: italic;
+}
+
+/* Applies to the articles' first occurrence of elements of different types */
+article :first-of-type {
+  color: darkblue;
+}
+
+/* Applies to the articles' last paragraph occurrence */
+article p:last-of-type {
+  background-color: lightblue;
+}
+
+/* Applies to the articles' last child, were it a paragraph element */
+article p:last-child {
+  color: red;
+}
+
+/* Applies to the uls' odd items (nth-child() works as a function */
+ul li:nth-child(odd) {
+  color: deeppink;
+}
+
+/* Applies to the ul's 3rd li item */
+ul li:nth-child(3n) {
+  color: green;
+  font-weight: bold;
+}
+
+/* visited: applies to visited links , link: applies to all links*/
+a:visited,
+a:link {
+  background-color: goldenrod;
+}
+
+/* hover: applies to every link when you hover over them, focus: applies to every link when you focus them with Tab */
+a:hover,
+a:focus {
+  color: indianred;
+}
+/* It's a best practice to use both together */

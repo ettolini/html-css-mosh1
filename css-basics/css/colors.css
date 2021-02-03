@@ -1,0 +1,23 @@
+/* You can define color with the RGB System (Red, Green, Blue). You can google "color picker" to choose one more easily.
+The A is optional, is used to define color transparency, gets a decimal value from 0 to 1. */
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: rgba(230, 205, 16, 0.5);
+}
+
+/* You can also use the Hexadecimal System. Doesn't have a transparency channel. */
+.box2 {
+  width: 200px;
+  height: 200px;
+  background-color: #e6cd10;
+}
+
+/* There's also the HSL System (Hue, Saturation, Lightness). First is defined the color wheel position, then the saturation and light percentage.
+Also includes an optional transparency channel, with the same format.*/
+.box3 {
+  width: 200px;
+  height: 200px;
+  background-color: hsla(53, 87%, 48%, 0.5);
+  /* Or it could also be typed as hsl(53deg 87% 48%), doesn't work with transparency (I think) */
+}

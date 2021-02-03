@@ -1,0 +1,12 @@
+.box {
+  width: 300px;
+  height: 300px;
+  background: dodgerblue;
+  border: 10px dashed royalblue;
+  /* You can define the entire border's width, style (solid, dashed, dotted...), color... */
+  border-width: 10px 20px;
+  /* Sets the with of every border corner, it goes: up, right, down, left.
+    If down is not defined, it'll take up's value, left will do the same with right ("10px 20px" is the same as "10px 20px 10px 20px") */
+  border-radius: 10px;
+  /* You can set radius with pixels or percentage, makes the element's square borders rounder (creating a circle-like object if desired) */
+}

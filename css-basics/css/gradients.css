@@ -1,0 +1,21 @@
+/* Go to cssgradient.io to test gradient possibilities.
+It's recommended that you add plain background colors before gradient ones, because not every browser suppports gradients. 
+Whoever's using one of those browsers will get to see the plain color instead of whatever it's there by default. */
+
+/* You can set a color gradient like the following, you can set the position it'll start from (or the angle degree),
+between parentesis you can set the colors (you can also add from what percertage the color will appear), and so on. */
+.box {
+  width: 200px;
+  height: 200px;
+  background: blue;
+  background: linear-gradient(45deg, tomato 20%, blue 50%, yellow 80%);
+}
+
+/* This sets a gradient that by default starts from within, usually looks like a circle or oval. You can change from where it comes,
+set the colors. */
+.box2 {
+  width: 600px;
+  height: 300px;
+  background: dodgerblue;
+  background: radial-gradient(circle at top left, white, dodgerblue);
+}

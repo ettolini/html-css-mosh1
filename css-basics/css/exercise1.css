@@ -1,0 +1,32 @@
+body {
+  margin: 10px;
+}
+
+table,
+td,
+th {
+  border: 1px solid #c4dcf3;
+  border-left: 0;
+  border-right: 0;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 10px;
+}
+
+th {
+  background-color: #427fef;
+  color: white;
+}
+
+tr:nth-child(odd) {
+  background-color: #eef7ff;
+}
+
+tfoot {
+  text-align: left;
+}
+
+/* th -> header cell ; td -> data cell tr -> defines a row */

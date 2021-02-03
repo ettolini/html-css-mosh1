@@ -1,0 +1,22 @@
+/* Every selector has their own specificity level. If applied to the same element, the most specific one will take over.
+If both have the same specificity, the one defined the last will take over. */
+
+/* Specificity level: 001 (element select) */
+h1 {
+  color: dodgerblue;
+}
+
+/* Specificity level: 010 (class select) */
+.highlight {
+  color: deeppink;
+}
+
+/* Specificity level: 100 (id select) */
+#products {
+  color: green;
+}
+
+/* Specificity level: 110 (class and id select) */
+.highlight #products {
+  color: dodgerblue;
+}

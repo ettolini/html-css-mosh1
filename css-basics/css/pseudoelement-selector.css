@@ -1,0 +1,28 @@
+body {
+  margin: 10px;
+}
+
+p::first-letter {
+  font-size: 140%;
+  font-weight: bold;
+}
+
+p::first-line {
+  font-weight: bold;
+}
+
+/* If you remove the "p", every element that you select will be highlighted with pink, instead of just paragraphs */
+p::selection {
+  background-color: pink;
+}
+
+/* Inserts the content before every paragraph (takes inline space) */
+p::before {
+  content: "...";
+}
+
+/* Inserts the content after every paragraph (takes the entire block space) */
+p::after {
+  content: "...";
+  display: block;
+}

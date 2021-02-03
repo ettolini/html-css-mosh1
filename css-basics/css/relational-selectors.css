@@ -1,0 +1,23 @@
+/* Works for every paragraph element inside the "products" section */
+#products p {
+  color: orange;
+}
+
+/* Works for every paragraph element that is a direct child of the "products" section */
+#products > p {
+  color: yellow;
+}
+
+/* Works for the paragraph element that comes immediately after the "products" section (its siblin) */
+#products + p {
+  color: red;
+}
+
+/* Works for the paragraph elements that come after the "product" section (its general siblins) */
+#products ~ p {
+  font-weight: bold;
+}
+
+/* Reational selectors provide cleaner markup, since you don't need to define that many classes and ids,
+but they are more fragile (since they deppend on the HTML elements location, if moved, these selectors wouldn't properly work).
+These selectors are not as fast as the others, since the browser needs to check how the elements' family was defined before showing anything. */
